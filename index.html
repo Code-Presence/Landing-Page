@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutraining</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/28e5ec974a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <div class="body_wrapper">
+      <header>
+        <div class="header-center">
+          <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#conceito">Conceito</a>
+            <a href="#funcionalidades">Funcionalidades</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#planos">Planos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <section id="home" class="screenfull home container-fluid home-bg">
+        <div
+          class="container d-flex justify-content-center align-items-center phone-home"
+        >
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center text-center padphone"
+          >
+            <h1>O mais novo conceito<br />em consultoria fitness</h1>
+            <a class="btn-home" href="">Comece agora</a>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center text-center">
+            <img class="img1" src="./assets/img/iphone_app1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="conceito" class="home container-fluid bg-light pad2">
+        <div
+          class="container d-flex justify-content-center align-items-start phone-home"
+        >
+          <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <h1>Conquiste qualidade de vida na palma da sua mão</h1>
+            <p class="phonemt50">
+              Já imaginou sua nutricionista junto com seu personal
+              desenvolvendo o melhor caminho para você conquistar seu objetivo?
+            </p>
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-end text-center justifyphone phonemt50"
+          >
+            <img class="img2" src="./assets/img/helptrainning.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="container d-flex justify-content-center align-items-center pad1 phone-home phoneivert"
+        >
+          <div
+            class="col-lg-4 d-flex justify-content-start justifyphone phonemt50"
+          >
+            <img class="img2" src="./assets/img/gym_app.jpg" alt="" />
+          </div>
+          <div
+            class="col-lg-4 d-flex flex-column justify-content-center text-end phonetext"
+          >
+            <h1>Agora isso é possível!</h1>
+            <p class="phonemt50">
+              Aplicativo desenvolvido para facilitar sua rotina, simplificando o
+              modo que você vê seu treino e plano alimentar. Além de ser seu
+              maior aliado para bater as metas diárias e estar lembrando
+              constantemente sua evolução,<br />
+              <strong>MOTIVAÇÃO É O NOSSO FORTE!</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="funcionalidades"
+        class="home container-fluid bg-yellow features-bg pad2"
+      >
+        <div class="justify-content-center text-center mb-5">
+          <h1>Funcionalidades</h1>
+        </div>
+        <div
+          class="container d-flex justify-content-center gap-lg-5 align-items-center phone-home phoneivert"
+        >
+          <div
+            class="col-lg-4 d-flex justify-content-center features-mg phonemt50"
+          >
+            <img class="img3" src="./assets/img/iphonehome.png" alt="" />
+          </div>
+          <div
+            class="col-lg-4 d-flex flex-row gap-xxl-5 text-start phonetext features-wd phone-home"
+          >
+            <div class="d-flex flex-column featuresbox text-start phonemt50">
+              <h3 class="mb-3">
+                <i
+                  class="fa-solid fa-apple-whole"
+                  aria-hidden="true"
+                  style="margin-right: 10px"
+                ></i
+                >Nutricional
+              </h3>
+              <ul>
+                <li>Plano alimentar individualizado</li>
+                <li>Substitutos</li>
+                <li>Receitas</li>
+                <li>Metas diárias</li>
+                <li>Lembretes</li>
+                <li>Evolução semanal</li>
+                <li>Acompanhamento semanal</li>
+                <li>Suporte online</li>
+              </ul>
+            </div>
+            <div class="d-flex flex-column featuresbox text-start phonemt50">
+              <h3 class="mb-3">
+                <i
+                  class="fa-solid fa-dumbbell"
+                  aria-hidden="true"
+                  style="margin-right: 10px"
+                ></i
+                >Treinamento
+              </h3>
+              <ul>
+                <li>Periodização individualizada</li>
+                <li>Metas diárias</li>
+                <li>Acompanhamento semanal</li>
+                <li>Lembretes</li>
+                <li>Suporte direto com seu personal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="equipe" class="home container-fluid pad1 pad2">
+        <div
+          class="container d-flex justify-content-center align-items-center phone-home"
+        >
+          <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <h1>Nutricionista</h1>
+            <p class="phonemt50">
+              Nutricionista formada pela Universidade Federal do Rio Grande do
+              Norte, pós-graduanda em nutrição, metabolismo e fisiologia no
+              esporte.
+            </p>
+            <p>
+              Meu propósito é auxiliá-lo(a) a alcançar os seus objetivos,
+              com o compromisso de levar saúde e bem-estar através de uma
+              alimentação saudável, sustentável e simples.
+            </p>
+          </div>
+          <div
+            class="col-lg-4 d-flex justify-content-end text-center justifyphone phonemt50"
+          >
+            <img class="img2" src="./assets/img/nutri.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="container d-flex justify-content-center align-items-center pad1 phone-home phoneivert"
+        >
+          <div
+            class="col-lg-4 d-flex justify-content-start justifyphone text-center phonemt50 phonemb100"
+          >
+            <img class="img2" src="./assets/img/nutri.jpg" alt="" />
+          </div>
+          <div
+            class="col-lg-4 d-flex flex-column justify-content-center text-end phonetext"
+          >
+            <h1>Personal Trainer</h1>
+            <p class="phonemt50">
+              Profissional de educação física bacharelado com
+              pós-graduação em exercícios físicos adaptados para a
+              população especial.
+            </p>
+            <p>
+              Durante anos me especializei na ciência do treinamento, em busca
+              da solução para diversos problemas estéticos e funcionais e
+              hoje posso com autoridade te guiar por um caminho seguro e
+              eficiente para seus resultados.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="depoimentos"
+        class="home container-fluid pad2 planbox phone-home"
+      >
+        <div
+          class="container d-flex justify-content-center align-items-center pb-5"
+        >
+          <h1>Não acredite apenas em nossa palavra</h1>
+        </div>
+        <div
+          class="container d-flex flex-row justify-content-center align-items-center phone-home"
+        >
+          <div
+            class="col-lg-4 d-flex flex-column justify-content-center text-start phonetext depbox"
+          >
+            <h3>
+              <b>"</b>Já imaginou sua nutricionista junto com seu personal
+              desenvolvendo o melhor caminho para você conquistar seu
+              objetivo?"
+            </h3>
+            <div class="autor">
+              <div>
+                <img class="thumb" src="./assets/img/nutri.jpg" alt="" />
+              </div>
+              <div class="d-flex flex-column">
+                <span class="nome">Fulano de Tal</span>
+                <span class="profissao">Arquiteto</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 d-flex flex-column justify-content-center text-start phonetext depbox"
+          >
+            <h3>
+              <b>"</b>Já imaginou sua nutricionista junto com seu personal
+              desenvolvendo o melhor caminho para você conquistar seu
+              objetivo?"
+            </h3>
+            <div class="autor">
+              <div>
+                <img class="thumb" src="./assets/img/nutri.jpg" alt="" />
+              </div>
+              <div class="d-flex flex-column">
+                <span class="nome">Fulano de Tal</span>
+                <span class="profissao">Arquiteto</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 d-flex flex-column justify-content-center text-start phonetext depbox"
+          >
+            <h3>
+              <b>"</b>Já imaginou sua nutricionista junto com seu personal
+              desenvolvendo o melhor caminho para você conquistar seu
+              objetivo?"
+            </h3>
+            <div class="autor">
+              <div>
+                <img class="thumb" src="./assets/img/nutri.jpg" alt="" />
+              </div>
+              <div class="d-flex flex-column">
+                <span class="nome">Fulano de Tal</span>
+                <span class="profissao">Arquiteto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="planos" class="home container-fluid pad1 pad2 planos">
+        <div
+          class="container d-flex flex-column justify-content-start justifyphone"
+        >
+          <div id="mensal" class="">
+            <div class="text-center">
+              <h1>Mensal</h1>
+            </div>
+            <div
+              class="d-flex flex-row justify-content-center align-items-center gap-5 pad3 phone-home"
+            >
+              <div
+                class="col-lg-6 d-flex justify-content-start justifyphone text-center"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <i
+                      class="fa-solid fa-dumbbell"
+                      aria-hidden="true"
+                      style="margin-right: 10px; color: #c7a465"
+                    ></i
+                    >Avulso Personal: <b>R$ 250,00</b>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-apple-whole"
+                      aria-hidden="true"
+                      style="margin-right: 5px; color: #c7a465"
+                    ></i>
+                    Avulso Nutri: <b>R$ 160,00</b>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-dumbbell"
+                      aria-hidden="true"
+                      style="margin-right: 10px; color: #c7a465"
+                    ></i
+                    ><i
+                      class="fa-solid fa-apple-whole"
+                      aria-hidden="true"
+                      style="margin-right: 5px; color: #c7a465"
+                    ></i
+                    >Avulso P+N: <b>R$ 410,00</b>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 text-center">
+                <p>
+                  Um plano de 30 dias de treinos e acompanhamento alimentar para
+                  da start na sua evolução contando com todo suporte de uma
+                  equipe para facilitar seu processo.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center phonemb100">
+              <a class="btn-home" href="">Comece agora</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="trimestral"
+        class="home container-fluid pad1 pad2 planos planbox"
+      >
+        <div
+          class="container d-flex flex-column justify-content-start justifyphone"
+        >
+          <div id="trimestral" class="">
+            <div class="text-center">
+              <h1>PURO FOCO</h1>
+            </div>
+            <div
+              class="d-flex flex-row justify-content-between align-items-center pad3 phone-home"
+            >
+              <div class="col-lg-6 text-center">
+                <h5>Trimestral:</h5>
+                <h2>
+                  <b
+                    ><span style="font-size: 30px">R$</span>299,00<span
+                      style="font-size: 30px"
+                      >x3 = R$ 897,00</span
+                    ></b
+                  >
+                </h2>
+                <h6>Economize R$ 333,00</h6>
+              </div>
+              <div class="col-lg-4 text-center">
+                <p>
+                  <strong>TRÊS MESES DE PURO FOCO!! </strong>Atualizações
+                  mensais de seu planejamento do treino e três encontros com
+                  sua nutricionista. Além disso, você terá todo suporte
+                  ofertado pelo nosso aplicativo.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center phonemb100">
+              <a class="btn-home" href="">Comece agora</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="semestral" class="home container-fluid pad1 pad2 planos">
+        <div
+          class="container d-flex flex-column justify-content-start justifyphone"
+        >
+          <div id="semestral" class="">
+            <div class="text-center">
+              <h1>IMERSÃO FITNESS</h1>
+            </div>
+            <div
+              class="d-flex flex-row justify-content-between align-items-center pad3 phone-home"
+            >
+              <div class="col-lg-6 text-center">
+                <h5>Semestral:</h5>
+                <h2>
+                  <b
+                    ><span style="font-size: 30px">R$</span>249,00<span
+                      style="font-size: 30px"
+                      >x6 = R$ 1494,00</span
+                    ></b
+                  >
+                </h2>
+                <h6>Economize R$ 966,00</h6>
+              </div>
+              <div class="col-lg-4 text-center">
+                <p>
+                  <strong
+                    >Seis meses de INTENSO planejamento da sua nova rotina, </strong
+                  >contando com seis atualizações de treinos e todo aparato do
+                  seu personal trainer, suporte e orientações nutricionais com
+                  cinco encontros com a nutricionista para guiar e ajustar tudo
+                  da melhor formar para você.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center phonemb100">
+              <a class="btn-home" href="">Comece agora</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="anual" class="home container-fluid pad1 pad2 planos planbox">
+        <div
+          class="container d-flex flex-column justify-content-start justifyphone"
+        >
+          <div id="anual" class="">
+            <div class="text-center">
+              <h1>365° NA EVOLUÇÃO</h1>
+            </div>
+            <div
+              class="d-flex flex-row justify-content-between align-items-center pad3 phone-home"
+            >
+              <div class="col-lg-7 plan-space text-center">
+                <h5>Anual:</h5>
+                <h2>
+                  <b
+                    ><span style="font-size: 30px">R$</span>219,00<span
+                      style="font-size: 30px"
+                      >x12 = R$ 2628,00</span
+                    ></b
+                  >
+                </h2>
+                <h6>Economize R$ 2292,00</h6>
+              </div>
+              <div class="col-lg-4 text-center">
+                <p>
+                  <strong>Já pensou estar no foco o ano inteiro? </strong>
+                  <br />
+                  Esse plano foi pensado para você que realmente está
+                  decidido! Estaremos com você o ano todo, com mudanças
+                  mensais de treinos para sempre esta adaptado para sua rotina e
+                  nove encontros com sua nutricionista para que você não sofra
+                  com dificuldades na sua rotina alimentar.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center phonemb100">
+              <a class="btn-home" href="">Comece agora</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="conta footer-nu d-flex justify-content-center align-items-start pad1"
+      >
+        <div class="container row justify-content-around">
+          <div class="col-lg-4">
+            <a href="">
+              <img class="logo" src="./assets/img/logowhite.svg" alt="" />
+            </a>
+            <p>© 2022 Nutraining.</p>
+            <p>Todos os direitos reservados.</p>
+            <div class="foot-icon-class">
+              <a class="foot-icon" href=""
+                ><i class="fa-brands fa-instagram-square"></i
+              ></a>
+              <a class="foot-icon" href=""
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2>Funcionalidades</h2>
+            <ul class="list-unstyled">
+              <li>Plano alimentar individualizado</li>
+              <li>Periodização individualizada</li>
+              <li>Substitutos</li>
+              <li>Receitas</li>
+              <li>Metas diárias</li>
+              <li>Lembretes</li>
+              <li>Evolução semanal</li>
+              <li>Acompanhamento semanal</li>
+              <li>Suporte online</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 phonemb100">
+            <h2>Contato</h2>
+            <ul class="list-unstyled">
+              <li>
+                <a href="">Suporte</a>
+              </li>
+              <li>
+                <a href="">email: nutrainingconsultoria@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
