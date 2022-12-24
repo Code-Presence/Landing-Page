@@ -43,6 +43,11 @@ body {
 .pad3 {
   padding: 60px 0px;
 }
+
+.bg-ronaldo{
+    background-color: #C7A465;
+}
+
 .home-bg {
   background-image: url("./assets/img/bg-home-yellow-01.png");
   background-repeat: no-repeat;
@@ -75,12 +80,14 @@ body {
   color: #141215;
 }
 .featuresbox {
+  color: #141215;
   position: relative;
   display: inline-block;
   background-color: #eff0f1;
   border-radius: 3%;
   padding: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* offset-x | offset-y | blur-radius | color */
+box-shadow: 0px 10px 10px rgba(0,0,0, 0.10);
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -91,8 +98,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 3%;
   opacity: 0;
-  box-shadow: 0 5px 15px rgba(53, 53, 53, 0.3);
+  /* offset-x | offset-y | blur-radius | color */
+box-shadow: 0px 10px 10px rgba(0,0,0, 0.50);
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -156,7 +165,7 @@ body {
   font-size: 48px;
 }
 .planos h2 {
-  font-size: 120px;
+  font-size: 100px;
 }
 .planos p {
   font-size: 20px;
@@ -175,7 +184,9 @@ body {
   display: inline-block;
   background-color: #c7a465;
   border: solid 1px #c7a465;
-  color: #141215;
+  color: white;
+  /* offset-x | offset-y | blur-radius | color */
+box-shadow: 0px 10px 10px rgba(0,0,0, 0.10);
   cursor: pointer;
   padding: 14px 40px;
   margin: auto;
@@ -188,7 +199,7 @@ body {
 }
 .btn-home:hover {
   background-color: #141215;
-  border-color: #c7a465;
+  border-color: #141215;
   color: #c7a465;
 }
 .footer-nu {
@@ -252,6 +263,113 @@ body {
   display: flex;
   justify-content: center;
 }
+.logo-price {
+  height: 30%;
+  width: 26%;
+  margin: 10px;
+}
+.nu-border {
+  border-right: solid 2px #141215;
+  align-items: flex-end;
+}
+.nu-border-l {
+  border-left: solid 2px #141215;
+}
+.price-border {
+  margin: 0px 50px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+.nu-box {
+  padding-left: 30px;
+  text-align: start;
+}
+.nu-box h3 {
+  font-weight: 700;
+}
+.nu-box p {
+  font-size: 18px;
+}
+del {
+  text-decoration: line-through #c7a465;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #141215;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px 12px;
+}
+.dot1 {
+  height: 25px;
+  width: 25px;
+  border: solid 2px #141215;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px 12px;
+}
+.logo-bg {
+  background-image: url("./assets/img/logoround.png");
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position-y: top;
+}
+.logo-bg1 {
+  background-image: url("./assets/img/logoround1.png");
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position-y: top;
+  background-position-x: right;
+}
+.pad-equipe {
+  padding: 100px 0px 0px 0px;
+}
+.pad-equipe2 {
+  padding-top: 65px;
+}
+.equipe-mb {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.equipebox {
+  color: #eff0f1;
+  position: relative;
+  display: inline-block;
+  background-color: #2e2e2e;
+  border-radius: 3%;
+  padding: 20px;
+  /* offset-x | offset-y | blur-radius | color */
+box-shadow: 0px 10px 10px rgba(0,0,0, 0.10);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.equipebox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+  opacity: 0;
+  /* offset-x | offset-y | blur-radius | color */
+box-shadow: 0px 10px 10px rgba(0,0,0, 0.50);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.equipebox:hover::after {
+  opacity: 1;
+}
+.avulso h2 {
+  font-size: 56px;
+}
+.phoneprice {
+  flex-direction: row;
+}
+
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -296,7 +414,7 @@ body {
   .phone-home {
     display: flex;
     flex-direction: column !important;
-    background-size: cover !important;
+    background-size: 40% !important;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -339,8 +457,7 @@ body {
     margin-bottom: 100px;
   }
   .planos h2 {
-    font-size: 73px;
-    line-height: 25px;
+    font-size: 40px;
     margin-top: 30px;
     margin-bottom: 25px;
   }
@@ -354,4 +471,31 @@ body {
   .plan-space {
     width: unset;
   }
+  .equipe-mb {
+    margin-bottom: unset;
+  }
+  .phonedisplay {
+    display: none !important;
+  }
+  .phoneprice {
+    flex-direction: column;
+  }
+  .price-border {
+    margin: unset;
+    border-bottom-style: unset;
+    border-bottom-width: unset;
+  }
+  .nu-box {
+    padding-left: unset;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .nu-border-l {
+    border-left: unset;
+  }
+
+
+
+
 }
